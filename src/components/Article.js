@@ -36,9 +36,9 @@ export default function Article({
     return(
         <article>
             <h3>{title}</h3>
-            <small>{date}</small>
+            <small>{date} <ReadingTimeIndicator minutes={minutes} /></small>
             <p>{preview}</p>
-            <ReadingTimeIndicator minutes={minutes} />
+            
         </article>
         
     )
